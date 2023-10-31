@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.red{
+    background-color: red;
+    color:white;
+}
+.green{
+    background-color: green;
+    color:aqua;
+}
+
+.container{
+    color:yellow;
+    font-size: larger;
+    background-color: rgb(94,26,184);
+}
+
+ body{
+    /* height: 344px; */
+    background-image: url('6064403.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
