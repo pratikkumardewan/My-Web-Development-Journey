@@ -1,0 +1,168 @@
+# Webdevelopment
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>My Web Development Journey</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: yellow;
+        }
+
+        article {
+            background-color: orange;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        dl {
+            margin-bottom: 20px;
+        }
+
+        dt {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #9932CC;
+            color: greenyellow;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        dt{
+            color: black;
+        }
+
+        a {
+            color: blueviolet;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .resource-box {
+            background-color: skyblue;
+            padding: 10px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .tips-box {
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        #email-id{
+            color: aqua;
+        }
+    </style>
+    </head>
+    <body>
+
+    <header>
+        <h1>My Web Development Journey</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>About my web development journey</h2>
+
+            <p>
+                I have started studying web development from various online resources, including YouTube channels, online courses, and coding bootcamps. It's an exciting journey, and I'm learning a lot about HTML, CSS, JavaScript, and more. I'm documenting my progress and experiences along the way.
+            </p><br>
+
+            <div class="resource-box">
+                <h3>My Resources</h3>
+                <dl>
+                    <dt>Code With Harry YouTube Channel:</dt>
+                    <dd>Starting with Code With Harry's YouTube channel, I gained a beginner-friendly introduction to web development, covering HTML, CSS, JavaScript, and more.<br>
+                        <a href="https://youtu.be/BsDoLVMnmZs?si=_wlBD8k-owMvIH6L">Code With Harry yt channel link</a>
+                    </dd><br>
+
+                    <dt>FreeCodeCamp YouTube Channel:</dt>
+                    <dd>FreeCodeCamp's YouTube channel, provided in-depth tutorials and resources to expand my knowledge further.<br>
+                    <a hre<br>f="https://youtu.be/HXV3zeQKqGY"></a>
+                    </dd><br>
+
+                    <dt>CodeHelp by BUbber:</dt>
+                    <dd>I explored various perspectives and insights on web development topics through the CodeHelp YouTube channel.<br>
+                    <a href="https://youtu.be/Vi9bxu-M-ag?si=HPWH-0S322YrrQ5T">CodeHelp By- Babbar YT channel link</a>
+                    </dd><br>
+
+                    <dt>The Web Development Bootcamp on Udemy:</dt>
+                    <dd>I downloaded the Udemy course "The Web Development Bootcamp" from a torrent site. This comprehensive course provided structured learning with hands-on exercises and projects.<br>
+                    <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">Udemy Webdevelopment Bootcamp Course Link</a>
+                    </dd><br>
+
+                    <dt>Web Development at Coding Ninjas: </dt>
+                    <dd>This course I also torrented, but you should purchase it if you want. Coding Ninjas, where I expect to dive into more advanced topics and projects.<br>
+                    <a href="https://www.codingninjas.com/careercamp/professionals/?utm_source=google&utm_medium=PMax&utm_campaign=19820646125_____c&gad_source=1&gclid=Cj0KCQjwy4KqBhD0ARIsAEbCt6hPB_0Mo93tP6FmqZMnZy5Zc1r0uLl2YjmNotkIYXEEI1eFEkgqmjgaAqAmEALw_wcB">Coding Ninjas Course</a><br>
+                    </dd><br>
+                </dl>
+            </div>
+
+            <div class="tips-box">
+                <h3>Here are some tips to enhance your web development journey:</h3>
+                <dl><dt>Practice Regularly: </dt>
+                <dd>Web development is a practical skill, so consistent practice is essential. Create your own projects and build websites from scratch to reinforce your learning.</dd><br>
+                <dt>Challenge Yourself: </dt>
+                <dd>As you progress, take on more complex projects to apply your knowledge effectively.</dd><br>
+                <dt>Stay Updated:</dt>
+                <dd>The web development field evolves quickly, so keep up with the latest trends and technologies.</dd><br>
+                <dt>Engage with the Community: </dt>
+                <dd>Join online forums, social media groups, or local meetups related to web development for support, feedback, and networking opportunities.</dd><br>
+                <dt>Document Your Journey: </dt>
+                <dd>Keep a record of your progress. Creating a repository (as you mentioned) can serve as a portfolio to showcase your skills to potential employers.</dd><br>
+                <dt>Understand, Don't Just Copy: </dt>
+                <dd>When following tutorials, make sure to grasp the concepts rather than copying code blindly. Understanding is key to becoming a proficient developer.</dd><br>
+                <dt>Ask Questions: </dt>
+                <dd>If you encounter challenges or have questions, don't hesitate to seek help on platforms like Stack Overflow or MDN reference or within your online communities.</dd><br>
+            </dl>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>
+            I created this readme file for the sheer fun of it! 😜
+            <br>
+            Contact me - <a href="mailto:pratikkumardewan@gmail.com" id="email-id">pratikkumardewan@gmail.com</a>
+        </p>
+    </footer>
+
+    </body>
+    </html>
