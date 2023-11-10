@@ -1,0 +1,22 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+.content {
+    margin: 20px ;
+    padding: 30px;
+    border: 10px solid black;
+    height: 323px;
+    width: 323px;
+    background: red;
+}
+
+.box{
+    margin: 20px ;
+    padding: 30px;
+    border: 10px solid black;
+    width: 323px;
+    background: yellow;
+    box-sizing: border-box;
+}
