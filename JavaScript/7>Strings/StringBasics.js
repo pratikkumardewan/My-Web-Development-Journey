@@ -34,3 +34,7 @@ console.log("This is Pratik\'s \"Pen\".");
  *
  */
  console.log("\u0041");
+
+ // to get specific character of specific position we can use [index]
+
+console.log("First chacter of the string str1 is ",str1[0]);
