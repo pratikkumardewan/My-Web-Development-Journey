@@ -15,6 +15,12 @@ const multiLineString = `
 console.log(multiLineString);
 
 
+ // to get specific character of specific position we can use [index]
+ console.log("First chacter of the string str1 is ",str1[0]);
+
+//to know the length of a string we can use length opperator
+console.log("length/size of the string str1 is",str1.length);
+
 // Template literals / String Interpulation
 //String interpolation is the process of evaluating variables within a string. 
 //In JavaScript, this can be achieved using the + operator or template literals.
@@ -35,6 +41,3 @@ console.log("This is Pratik\'s \"Pen\".");
  */
  console.log("\u0041");
 
- // to get specific character of specific position we can use [index]
-
-console.log("First chacter of the string str1 is ",str1[0]);
