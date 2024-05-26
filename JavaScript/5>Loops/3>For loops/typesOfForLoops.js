@@ -32,13 +32,12 @@ for (let i = 0; i < 5; i++) {
 
 // 2. for...in Loop
 
-const person = { name: "John", age: 30, city: "New York" };
-for (let key in person) {
-  console.log(`for...in Loop - ${key}: ${person[key]}`); // Prints key-value pairs
-  // name: John
-  // age: 30
-  // city: New York
+const fruits = ['apple', 'banana', 'cherry'];
+
+for (let index in fruits) {
+    console.log(`Index: ${index}, Value: ${fruits[index]}`);
 }
+
 
 // 3. for...of Loop
 
