@@ -50,10 +50,22 @@ including numbers, strings, objects, and even other arrays.
     // unshift: Adds one or more elements to the beginning of an array.
         array1.unshift(0);
         console.log(array1); // [0, 2, 10, 4]
+
+    //Delete element
+        delete array1[1]
+        console.log("array1 after deleted 1th element : ",array1);
+        array1[1]=2;
     
     //concat: Merges two or more arrays.
         let array5 = array1.concat(array2);
         console.log(array5); // [0, 2, 10, 4, 1, "a", 3.6, "pratik"]
+
+        let array6 = array1.concat(array2,array3,array4); //it will concat array1+array2+array3+array4 and return the address of the new concatinated array to array6
+        console.log("New concatinated array : ",array6);
+
+    //sort: Sort the array in alphabetical order
+        let array7 = array6.sort();
+        console.log("Sorted array6 in alphabetical order : ",array7);
     
     //slice: Returns a shallow copy of a portion of an array.
         let slicedArray = array5.slice(1, 4);
