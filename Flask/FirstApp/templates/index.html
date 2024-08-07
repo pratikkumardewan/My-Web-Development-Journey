@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This Is My Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .delete-btn {
+      color: white;
+      background-color: blue;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <h1>Heading</h1>
-    <p>Hello World</p>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main" class="container">
+    <div class="add_a_todo">
+      <h1>Add a ToDo</h1>
+      <form id="todo-form">
+        <div class="form-group">
+          <label for="todo-input">New ToDo</label>
+          <input type="text" class="form-control" id="todo-input" placeholder="Enter your todo">
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+    </div>
+    <div class="ToDo-List my-3">
+      <h1>Your's ToDo-List</h1>
+      <p class="lead">Use this document as a way to quickly start any new project. All you get is this text and a web page that looks a bit like this.</p>
+      <ul id="todo-list" class="list-group">
+        <!-- ToDo items will be added here -->
+      </ul>
+    </div>
+    
+  </main>
+
+  <footer class="bg-light py-3 container mp3">
+    <div class="container">
+        <div class="mt-4">
+          <h5>Comments</h5>
+          <form>
+            <div class="mb-3">
+              <label for="comment" class="form-label">Leave a Comment</label>
+              <textarea class="form-control" id="comment" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Post Comment</button>
+          </form>
+        </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById('todo-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var todoInput = document.getElementById('todo-input');
+      var todoText = todoInput.value.trim();
+      if (todoText === '') return;
+
+      var todoList = document.getElementById('todo-list');
+      var todoItem = document.createElement('li');
+      todoItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+      todoItem.textContent = todoText;
+
+      var deleteButton = document.createElement('button');
+      deleteButton.className = 'delete-btn';
+      deleteButton.textContent = 'Delete';
+      deleteButton.addEventListener('click', function() {
+        todoItem.remove();
+      });
+
+      todoItem.appendChild(deleteButton);
+      todoList.appendChild(todoItem);
+
+      todoInput.value = '';
+    });
+  </script>
 </body>
 </html>
