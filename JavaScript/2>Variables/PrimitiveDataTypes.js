@@ -66,4 +66,5 @@ console.log(`Value of variable c is ${c} and its type is ${typeof c}`);
 console.log(`Value of variable d is ${d} and its type is ${typeof d}`);
 console.log(`Value of variable b is ${b} and its type is ${typeof b}`);
 console.log(`Value of variable sym is ${sym.toString()} and its type is ${typeof sym}`);
+//console.log(sym);
 console.log(`Value of variable bigInt is ${bigInt} and its type is ${typeof bigInt}`);
