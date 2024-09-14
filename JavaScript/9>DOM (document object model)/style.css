@@ -1,0 +1,56 @@
+.box1 {
+    background-color: #DDA0DD; /* Pinkish purple background */
+    text-align: center; /* Center text, image, and button */
+    border: 2px solid black; /* Black border */
+    padding: 30px; /* Increased padding for larger content */
+    margin: 20px auto; /* Center the box on the page */
+    width: 80%; /* Box takes up 80% of the screen width */
+    max-width: 900px; /* Set a max width to prevent the box from becoming too wide */
+}
+
+.image-class1 {
+    display: block; /* Ensure the image is treated as a block element */
+    width: 70%; /* Increase image size relative to box */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto 20px auto; /* Center image with auto margins and add bottom space */
+}
+
+#buttonbox1 {
+    background-color: royalblue;
+    color: white; /* Add white text for contrast */
+    border: none;
+    padding: 15px 30px; /* Larger button */
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-top: 20px; /* Space between the image and the button */
+    display: block; /* Ensure button is on a new line */
+    margin-left: auto; /* Center the button */
+    margin-right: auto; /* Center the button */
+}
+
+
+.box2{
+    background-color: #e9ca43; /* Pinkish purple background */
+        text-align: center;
+        border: 2px solid black; /* Black border */
+        padding: 20px;
+        margin: 20px;
+}
+
+#buttonbox2 {
+    background-color: rgb(18, 190, 32);
+    color: white; /* Add white text for contrast */
+    border: none;
+    padding: 10px 20px; /* Adjust padding for size */
+    border-radius: 50px; /* Make the button round */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+#special-heading {
+    color: black; /* Or any other color you want */
+}
+
+.heading-class {
+    font-style: italic;
+    color: brown;
+}
