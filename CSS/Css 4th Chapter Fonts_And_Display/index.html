@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiment Inline</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+      body {
+        font-size: 0; /* Removes the whitespace effect */
+      }
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fonts And Display</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <section>
-            <h1 class="position">This Web Page is about <span id="line1">Fonts and Articles</span>.</h1>
-        </section>
-    </header>
-    <main>
-        <section class="Box1">
-            <h2 class="position">Box 1</h2>
-            <article class="font1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto maiores ad, impedit quaerat molestias soluta.</article>
-        </section>
-        <section class="Box2">
-            <h2 class="position">Box 2</h2>
-            <article class="font1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia saepe aspernatur exercitationem eligendi. Ratione odio temporibus omnis at voluptatum optio!</article>
-        </section>
-        <section class="Box3">
-            <h2 class="position">Box 3</h2>
-            <article class="font2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident harum tenetur necessitatibus impedit obcaecati ducimus eveniet? Ipsum cumque necessitatibus doloremque. Id quis earum hic aspernatur saepe sed alias iste voluptatum, doloremque eveniet rem repellendus quasi?</article>
-        </section>
-        <section class="Box4">
-            <h2 class="position">Box 4</h2>
-            <article class="font3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem architecto corrupti modi beatae autem blanditiis harum itaque nostrum? Quidem veritatis nemo quasi laborum corrupti libero nulla eveniet aut amet facere odit temporibus eius tempore totam unde enim, provident, odio dolorem ipsum modi error doloribus dolores rem. Ipsum, accusamus natus temporibus adipisci, doloremque alias distinctio tempore soluta quia odio porro tenetur sequi id facilis hic numquam laboriosam aspernatur mollitia vel. Hic fuga cumque laboriosam vitae eum? Nesciunt atque impedit in provident expedita quisquam distinctio, maxime voluptatibus deserunt id voluptatum ipsam amet ipsum tenetur fugit soluta, magnam dolores esse eum. Fugit optio deleniti eaque tenetur dolores ratione odio magni, minima qui mollitia ullam doloribus ipsam molestiae labore, ipsa reiciendis perspiciatis atque alias laborum similique quia! Eos, praesentium quod doloribus non quae facere minima ad eaque omnis consequuntur modi fugiat atque sed perferendis numquam tempore dolor! Fugit, delectus aliquam? Eos voluptate suscipit tenetur quod itaque, hic minus, incidunt molestias dignissimos perspiciatis dolore ut. Voluptatibus odit unde, magnam aliquam recusandae iste, beatae earum, praesentium hic nobis quidem veritatis molestiae. Corrupti aspernatur error quidem corporis cumque. Ipsum veniam pariatur saepe! Animi nesciunt a quis distinctio repellat, labore iste optio dolorum quam temporibus quas voluptates accusamus.</article>
-
-        </section>
-    </main>
-    <footer>
-        <p>Bye-Bye</p>
-    </footer>
-</body>
+      .box1, .box2 {
+        display: inline-block; /* Makes the divs inline */
+        color: white;
+        font-size: 16px; /* Restore font size for child elements */
+      }
+      .box1 {
+        background-color: red;
+      }
+      .box2 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aperiam!</p>
+    </div>
+    <div class="box2">
+      This is Box 2. It also uses inline display.
+    </div>
+  </body>
 </html>
