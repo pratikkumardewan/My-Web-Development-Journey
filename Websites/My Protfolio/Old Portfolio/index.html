@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pratik Kumar Dewan - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <a
+        href="javascript:window.scrollTo({ top: 0, behavior: 'smooth' });"
+        class="logo"
+        >Pratik</a
+      >
+      <ol id="navLinks" class="nav-links">
+        <li>
+          <a href="javascript:window.scrollTo({ top: 0, behavior: 'smooth' });"
+            >Home</a
+          >
+        </li>
+        <li><a href="#about_me">About me</a></li>
+        <li><a href="#services">My Services</a></li>
+        <li><a href="#hire">Hire Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+      <span class="burger" onclick="toggleMenu()">&#9776;</span>
+    </header>
+
+    <!-- Animated Intro Card -->
+    <div class="animated-card">
+      <div class="card-content">
+        <div class="card-left">
+          <img src="assets/My Image.JPG" alt="My Photo" class="service-image" />
+        </div>
+        <div class="card-right">
+          <h1>Pratik Kumar Dewan</h1>
+          <p>
+            (B.Tech. Graduate),<br />
+            I Offer Expert Services.
+          </p>
+          <p>Kolkata, West Bengal, India</p>
+          <p>📞 7439761320</p>
+          <p>✉️ pratikkumardewan@gmail.com</p>
+          <p>
+            🔗
+            <a
+              href="http://www.linkedin.com/in/pratik-kumar-dewan"
+              target="_blank"
+              >LinkedIn</a
+            >
+            |
+            <a href="https://github.com/pratikkumardewan" target="_blank"
+              >GitHub</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me, Education, Skills, Projects -->
+    <section class="info-wrapper" id="about_me">
+      <h2
+        class="info-section-heading"
+        style="
+          font-family: 'Times New Roman', serif, 'Arial', sans-serif,
+            'Courier New', monospace;
+        "
+      >
+        About Me
+      </h2>
+
+      <div class="info-section">
+        <h2>Profile</h2>
+        <p>
+          B.Tech graduate aspiring to be a full-stack developer, equipped with
+          diverse IT skills and proficiency in multiple programming languages.
+          Hardworking, motivated, responsible, and orderly. Eager to contribute
+          skills to enhance business performance. Adapts quickly to new
+          processes and excels both independently and as part of a team.
+        </p>
+      </div>
+
+      <div class="info-section">
+        <h2>My Education</h2>
+        <ul>
+          <li>Narula Institute of Technology (2020 – 2024) | CGPA: 8.05</li>
+          <li>Patha Bhavan School Class 12 (2018 – 2020) | 72%</li>
+          <li>Patha Bhavan School Class 10 (2017 – 2018) | 70%</li>
+        </ul>
+      </div>
+
+      <div class="info-section">
+        <h2>Skills</h2>
+        <ul>
+          <li>C, Java, Python</li>
+          <li>HTML, CSS, JavaScript, MySQL</li>
+          <li>Networking, Azure Basics, Microsoft Entra ID</li>
+          <li>DSA, OOP (Java), Linux Scripting</li>
+          <li>Git, GitHub, VS Code, Vim</li>
+        </ul>
+      </div>
+
+      <div class="info-section">
+        <h2>Projects</h2>
+        <ul>
+          <li>Smart Home Automation System (IoT)</li>
+          <li>Personal Assistant (Python)</li>
+          <li>Snake Game (C)</li>
+          <li>Employee Database System (C++)</li>
+          <li>Web Development Projects</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+      <h2
+        class="services-heading"
+        style="
+          font-family: 'Times New Roman', serif, 'Arial', sans-serif,
+            'Courier New', monospace;
+        "
+      >
+        Services I Provide
+      </h2>
+      <div class="service-list">
+        <section class="service-item">
+          <h3>Web Development</h3>
+          <p>Using HTML/CSS, JavaScript, ReactJS, Python, MySQL, PHP</p>
+          <button class="service-btn" onclick="showAlert('Web Development')">
+            Avail this service
+          </button>
+        </section>
+        <section class="service-item">
+          <h3>Software/App Development</h3>
+          <p>Java, Python, Kotlin</p>
+          <button
+            class="service-btn"
+            onclick="showAlert('Software/App Development')"
+          >
+            Avail this service
+          </button>
+        </section>
+        <section class="service-item">
+          <h3>IT/Network Services</h3>
+          <p>Cloud Computing, Azure, Network Troubleshooting, Server Setup</p>
+          <button
+            class="service-btn"
+            onclick="showAlert('IT/Network Services')"
+          >
+            Avail this service
+          </button>
+        </section>
+        <section class="service-item">
+          <h3>Consulting/Teaching</h3>
+          <p>I teach C, Java, Python, HTML, CSS, JavaScript, Linux</p>
+          <button
+            class="service-btn"
+            onclick="showAlert('Consulting/Teaching')"
+          >
+            Avail this service
+          </button>
+        </section>
+      </div>
+    </section>
+
+    <!-- Hire Me -->
+    <section id="hire" class="hire-me">
+      <h2
+        class="info-section-heading"
+        style="
+          font-family: 'Times New Roman', serif, 'Arial', sans-serif,
+            'Courier New', monospace;
+        "
+      >
+        Hire Me
+      </h2>
+      <div class="info-section">
+        <h2 class="with-bullet">
+          <span style="text-decoration: underline">
+            Hire Me for Full-Time or Part-Time Opportunities</span
+          >
+        </h2>
+        <p class="no-bullet">
+          I am open to full-time and part-time roles across India and globally.
+          I'm also willing to relocate anywhere, including international
+          locations, if sponsorship is provided. I am committed, hardworking,
+          and passionate about delivering high-quality IT services.
+        </p>
+        <button class="hire-btn" onclick="showAlert('Hiring Opportunity')">
+          Hire Me
+        </button>
+      </div>
+
+      <!-- Contact -->
+      <section id="contact" class="info-section">
+        <h2 style="text-decoration: underline">Contact Me</h2>
+        <div class="contact-block">
+          <p class="no-bullet">
+            Email:
+            <a href="mailto:pratikkumardewan@gmail.com"
+              >pratikkumardewan@gmail.com</a
+            >
+          </p>
+          <p class="no-bullet">
+            Phone: <a href="tel:+917439761320">+91 7439761320</a>
+          </p>
+          <p class="no-bullet">
+            Whatsapp: <a href="https://wa.me/917439761320"> +91 7439761320</a>
+          </p>
+          <p class="no-bullet">
+            GitHub:
+            <a href="https://github.com/pratikkumardewan" target="_blank"
+              >pratikkumardewan</a
+            >
+          </p>
+          <p class="no-bullet">
+            LinkedIn:
+            <a
+              href="http://www.linkedin.com/in/pratik-kumar-dewan"
+              target="_blank"
+              >pratikkumardewan</a
+            >
+          </p>
+        </div>
+        <div class="contact-buttons">
+          <a href="mailto:pratikkumardewan@gmail.com" class="btn">Email Me</a>
+          <a href="tel:+917439761320" class="btn">Call Me</a>
+          <a href="https://wa.me/917439761320" class="btn">WhatsApp</a>
+          <a href="http://www.linkedin.com/in/pratik-kumar-dewan" class="btn"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+    </section>
+
+    <!-- Footer - Moved OUTSIDE the hire-me section -->
+    <footer>
+      <p class="footer-text" style="color: #dfebf0">Feel free to contact me:</p>
+      <div class="contact-icons">
+        <a href="tel:+917439761320" class="contact-icon">📞 Phone</a> |
+        <a href="https://wa.me/917439761320" class="contact-icon"
+          >💬 WhatsApp</a
+        >
+        |
+        <a href="mailto:pratikkumardewan@gmail.com" class="contact-icon"
+          >📧 Email</a
+        >
+        |
+        <a
+          href="http://www.linkedin.com/in/pratik-kumar-dewan"
+          class="contact-icon"
+          >🔗 LinkedIn</a
+        >
+      </div>
+      <p class="footer-rights" style="color: #dfebf0">
+        &copy; 2024 Pratik Kumar Dewan. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
